@@ -1,0 +1,1 @@
+export const baseUrl = 'https://jkt48-showroom-api.vercel.app/api';
