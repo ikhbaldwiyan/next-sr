@@ -36,9 +36,9 @@ function Navigation() {
       <VStack>
         <Image src="https://jkt48.com/images/oglogo.png" borderRadius="full" py="3" />
         {menus.map((menu, idx) => (
-          <Link href="/">
+          <Link key={idx} href="/">
             <Button variant="link">
-              <Tooltip key={idx} label={menu.name} placement="right">
+              <Tooltip label={menu.name} placement="right">
                   <IconButton color={menu.name === 'Home' ? 'teal.500' : 'gray.500' } icon={menu.icon} aria-label={menu.name} />
               </Tooltip>
             </Button>
