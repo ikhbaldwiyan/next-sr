@@ -4,7 +4,7 @@ import { FaUser } from 'react-icons/fa';
 
 function RoomLives({roomLives}) {
   return (
-    roomLives.length !== 0 && (
+    roomLives.length !== undefined && (
       <>
         <Heading fontSize="28" as='h5' mb="6" color="gray.700">Room Lives</Heading>
         <SimpleGrid minChildWidth="300px" columns={4} spacingX="10px" spacingY="20px" mb="4">
