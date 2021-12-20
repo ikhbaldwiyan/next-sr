@@ -4,7 +4,7 @@ import { Box, Image, Flex, Text, Button, Link } from "@chakra-ui/react";
 
 export default function ImageProfile({ room }) {
   return (
-    <Box p="3" w="380px" borderWidth="1px" bgGradient='linear(to-l, teal.500, gray.700)' borderRadius="lg" color="white">
+    <Box p="3" w="400px" borderWidth="1px" bgGradient='linear(to-l, teal.500, gray.700)' borderRadius="lg" color="white">
       <Image borderRadius="md" src={room.image} />
       <Text ml="1" mt="2" fontSize="xl" fontWeight="semibold" lineHeight="short">
         {room.main_name}

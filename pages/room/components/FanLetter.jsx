@@ -6,14 +6,14 @@ export default function FanLetter({ room }) {
 
   const isDivider = (idx) => {
     if (idx !== 2) {
-     return  <Divider mb="2"/>
-   }
+      return  <Divider mb="2"/>
+    }
   }
 
   return (
     <Box>
       <Heading mt="4" as='h6' fontSize="24" color="gray.700">Fan Letter</Heading>
-      <Box mt="2" p="6" w="380px" borderWidth="1px" bgGradient='linear(to-l, teal.500, gray.600)' borderRadius="lg" color="white">
+      <Box mt="2" p="6" w="450px" borderWidth="1px" bgGradient='linear(to-l, teal.500, gray.600)' borderRadius="lg" color="white">
         <Text fontSize="md" fontWeight="semibold" lineHeight="short">
           {room.recommend_comment_list != null ?
             room.recommend_comment_list.map((item, idx) => (
