@@ -1,12 +1,25 @@
-import React from 'react'
+import React from "react";
 import { FaUser, FaAddressCard } from "react-icons/fa";
 import { Box, Image, Flex, Text, Button, Link } from "@chakra-ui/react";
 
 export default function ImageProfile({ room }) {
   return (
-    <Box p="3" w="400px" borderWidth="1px" bgGradient='linear(to-l, teal.500, gray.700)' borderRadius="lg" color="white">
+    <Box
+      p="3"
+      w="350px"
+      borderWidth="1px"
+      bgGradient="linear(to-l, teal.500, gray.700)"
+      borderRadius="lg"
+      color="white"
+    >
       <Image borderRadius="md" src={room.image} />
-      <Text ml="1" mt="2" fontSize="xl" fontWeight="semibold" lineHeight="short">
+      <Text
+        ml="1"
+        mt="2"
+        fontSize="xl"
+        fontWeight="semibold"
+        lineHeight="short"
+      >
         {room.main_name}
       </Text>
       <Flex mt="2" align="center" textAlign="center">
@@ -21,14 +34,20 @@ export default function ImageProfile({ room }) {
       </Flex>
       <Flex direction="column" py="4">
         <Link href={room.share_url_live} isExternal>
-          <Button color="teal" w="full">Open Showroom</Button>
+          <Button color="teal" w="full">
+            Open Showroom
+          </Button>
         </Link>
         {room.is_onlive ? (
-          <Button mt="4" colorScheme="green" color="white" w="full">Online</Button>
+          <Button mt="4" colorScheme="green" color="white" w="full">
+            Online
+          </Button>
         ) : (
-          <Button mt="4" colorScheme="red" color="white" w="full">Offline</Button>
+          <Button mt="4" colorScheme="red" color="white" w="full">
+            Offline
+          </Button>
         )}
       </Flex>
     </Box>
-  )
+  );
 }

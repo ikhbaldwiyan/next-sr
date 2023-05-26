@@ -7,22 +7,22 @@ const Index = ({ roomList, roomLives }) => {
     <MainLayout>
       <Home roomList={roomList} roomLives={roomLives} />
     </MainLayout>
-  )
-}
+  );
+};
 
 export async function getServerSideProps() {
-  const rooms = await fetch(`${baseUrl}/rooms`)
-  const roomList = await rooms.json()
+  const rooms = await fetch(`${baseUrl}/rooms`);
+  const roomList = await rooms.json();
 
   const onLives = await fetch(`${baseUrl}/rooms/onlives`);
-  const roomLives = await onLives.json()
+  const roomLives = await onLives.json();
 
-  return { 
-    props: { 
+  return {
+    props: {
       roomList,
-      roomLives
-    } 
-  }
+      roomLives,
+    },
+  };
 }
 
 export default Index;

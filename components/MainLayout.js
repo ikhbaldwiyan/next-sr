@@ -6,7 +6,7 @@ import React from 'react';
 const MainLayout = ({children}) => {
   return (
     <Flex bg="gray.100">
-      <Flex maxW={16} h="full" w="full">
+      <Flex maxW="80px" h="full" w="full">
         <Navigation />
       </Flex>
       <Flex as="main" h="full" w="full" bg="gray.300">
