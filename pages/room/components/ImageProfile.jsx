@@ -6,7 +6,7 @@ export default function ImageProfile({ room }) {
   return (
     <Box
       p="3"
-      w="350px"
+      w="full"
       borderWidth="1px"
       bgGradient="linear(to-l, teal.500, gray.700)"
       borderRadius="lg"

@@ -41,8 +41,8 @@ function Navigation() {
       <VStack gap={10}>
         <Image
           py="3"
-          borderRadius="full"
-          src="https://jkt48.com/images/oglogo.png"
+          borderRadius="lg"
+          src="https://media.discordapp.net/attachments/1108380195175551047/1111706299273592842/Group_42_1.png?width=906&height=906"
         />
         {menus.map((menu, idx) => (
           <Link key={idx} href="/">

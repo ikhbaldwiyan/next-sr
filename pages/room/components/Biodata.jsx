@@ -7,7 +7,6 @@ export default function Biodata({ room }) {
     <Box
       mt="2"
       p="3"
-      w="350px"
       borderWidth="1px"
       bgGradient="linear(to-l, teal.400, gray.600)"
       borderRadius="lg"

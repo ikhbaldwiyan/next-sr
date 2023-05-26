@@ -27,7 +27,7 @@ const RoomDetail = ({ room, roomList, roomLives, id }) => {
     <MainLayout>
       <Flex w="full" p="6" direction={["column", "column", "row", "row"]}>
         <Flex>
-          <Box>
+          <Box w={{ base: "380px", "2xl": "450px" }}>
             <Heading as="h5" fontSize="28" py="4" color="gray.700">
               {rooms.main_name}
             </Heading>
@@ -35,10 +35,15 @@ const RoomDetail = ({ room, roomList, roomLives, id }) => {
             <Biodata room={rooms} />
           </Box>
         </Flex>
-        <Flex mt="12" p={[null, null, "4", "4"]}>
+
+        <Flex
+          mt="12"
+          w={{ base: "420px", "2xl": "520px" }}
+          p={[null, null, "4", "4"]}
+        >
           <FanLetter room={rooms} />
         </Flex>
-        <Flex mt="16" w="350px">
+        <Flex mt="16" w={{ base: "360px", "2xl": "400px" }}>
           <RoomTableList
             roomList={roomList}
             roomLives={roomLives}

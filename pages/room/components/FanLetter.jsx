@@ -10,10 +10,9 @@ export default function FanLetter({ room }) {
   };
 
   return (
-    <Box>
+    <Box w="full">
       <Box
         p="6"
-        w="400px"
         borderWidth="1px"
         bgGradient="linear(to-l, teal.500, gray.600)"
         borderRadius="lg"
@@ -22,7 +21,7 @@ export default function FanLetter({ room }) {
         <Heading paddingTop="0px" as="h6" fontSize="24" mb={4}>
           Fan Letter
         </Heading>
-        <Divider mb="4" />
+        <Divider border="2px" borderColor="gray.300" mb="4" />
         <Text fontSize="md" fontWeight="semibold" lineHeight="short">
           {room.recommend_comment_list != null
             ? room.recommend_comment_list.map((item, idx) => (

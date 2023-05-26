@@ -15,8 +15,8 @@ import { RiLiveFill } from "react-icons/ri";
 export default function RoomTableList({ roomList, roomLives, setRoomId }) {
   return (
     <Table
+      size="md"
       borderRadius="md"
-      size="sm"
       colorScheme="gray"
       bgGradient="linear(to-r, gray.500, gray.700)"
       color="white"
