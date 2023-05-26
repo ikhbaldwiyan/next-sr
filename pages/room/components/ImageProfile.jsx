@@ -15,7 +15,7 @@ export default function ImageProfile({ room }) {
       <Image borderRadius="md" src={room.image} />
       <Text
         ml="1"
-        mt="2"
+        my="4"
         fontSize="xl"
         fontWeight="semibold"
         lineHeight="short"
