@@ -8,7 +8,7 @@ export default function Biodata({ room }) {
       mt="2"
       p="3"
       borderWidth="1px"
-      bgGradient="linear(to-l, teal.400, gray.600)"
+      bgGradient="linear(to-t, teal.600, gray.700)"
       borderRadius="lg"
       color="white"
     >

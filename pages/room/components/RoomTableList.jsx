@@ -20,7 +20,7 @@ export default function RoomTableList({ roomList, roomLives, setRoomId }) {
         size="md"
         borderRadius="md"
         colorScheme="gray"
-        bgGradient="linear(to-r, gray.500, gray.700)"
+        bgGradient="linear(to-t, gray.700, gray.600)"
         color="white"
       >
         <Thead height="70px">
@@ -71,7 +71,7 @@ export default function RoomTableList({ roomList, roomLives, setRoomId }) {
                 </Text>
               </Td>
               <Td>
-                <Button onClick={() => setRoomId(item.id)} colorScheme="teal">
+                <Button onClick={() => setRoomId(item.id)} colorScheme="telegram">
                   <RiLiveFill />
                 </Button>
               </Td>

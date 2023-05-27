@@ -14,7 +14,7 @@ export default function FanLetter({ room }) {
       <Box
         p="6"
         borderWidth="1px"
-        bgGradient="linear(to-l, teal.500, gray.600)"
+        bgGradient="linear(to-b, gray.600, gray.500)"
         borderRadius="lg"
         color="white"
       >

@@ -8,7 +8,7 @@ export default function ImageProfile({ room }) {
       p="3"
       w="full"
       borderWidth="1px"
-      bgGradient="linear(to-l, teal.500, gray.700)"
+      bgGradient="linear(to-b, teal.600, gray.700)"
       borderRadius="lg"
       color="white"
     >
