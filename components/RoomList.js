@@ -1,12 +1,12 @@
 import { Box, SimpleGrid, Image, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
-function RoomList({ roomList }) {
+function RoomList({ roomList, title }) {
   return (
     <>
-      {/* <Heading fontSize="28" as="h5" mb="6" color="gray.700">
-        Room List
-      </Heading> */}
+      <Heading fontSize="28" as="h5" py="3" color="gray.700">
+        {title}
+      </Heading>
       <SimpleGrid
         minChildWidth="300px"
         columns={4}
@@ -25,7 +25,11 @@ function RoomList({ roomList }) {
             <Image
               borderTopLeftRadius="8"
               borderTopRightRadius="8"
-              src={item.image_url ?? item.image}
+              src={
+                item?.image_url?.replace("m.jpeg", "l.jpeg") ??
+                item?.image?.replace("m.jpeg", "l.jpeg") ??
+                item.image_l
+              }
             />
             <Link href={`room/${item.id ?? item.room_id}`}>
               <Text

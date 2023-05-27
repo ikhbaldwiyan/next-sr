@@ -26,12 +26,16 @@ const RoomDetail = ({ room, roomList, roomLives, id }) => {
   return (
     <MainLayout>
       <Flex flexDirection="column">
-        <Flex px="6" py="2">
-          <Heading as="h5" fontSize="28" py="4" color="gray.700">
+        <Flex>
+          <Heading as="h5" pt="3" pb="4" fontSize="28" color="gray.700">
             {rooms.main_name}
           </Heading>
         </Flex>
-        <Flex w="full" px="6" direction={["column", "column", "row", "row"]}>
+        <Flex
+          w="full"
+          direction={["column", "column", "row", "row"]}
+          gap="1"
+        >
           <Flex>
             <Box w={{ base: "380px", "2xl": "450px" }}>
               <ImageProfile room={rooms} />
@@ -39,7 +43,7 @@ const RoomDetail = ({ room, roomList, roomLives, id }) => {
             </Box>
           </Flex>
           <Flex
-            w={{ base: "420px", "2xl": "520px" }}
+            w={{ base: "400px", "2xl": "520px" }}
             px={[null, null, "4", "4"]}
           >
             <FanLetter room={rooms} />

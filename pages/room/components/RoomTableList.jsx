@@ -41,7 +41,7 @@ export default function RoomTableList({ roomList, roomLives, setRoomId }) {
             roomLives?.map((item, idx) => (
               <Tr key={idx}>
                 <Td>
-                  <Image borderRadius="xl" src={item.image} />
+                  <Image borderRadius="lg" src={item.image} />
                 </Td>
                 <Td>
                   <b>{item.room_url_key.slice(6)}</b> <br />
@@ -63,7 +63,7 @@ export default function RoomTableList({ roomList, roomLives, setRoomId }) {
           {roomList.map((item, idx) => (
             <Tr key={idx}>
               <Td>
-                <Image borderRadius="xl" src={item.image_url} />
+                <Image borderRadius="lg" src={item.image_url} />
               </Td>
               <Td>
                 <Text fontSize="md" fontWeight="semibold">
