@@ -17,8 +17,8 @@ function RoomList({ roomList, title }) {
           <Box
             key={idx}
             bg="teal.400"
-            width={{ base: "350px", "2xl": "320px" }}
-            height={{ base: "260px", "2xl": "240px" }}
+            width={{ base: "300px", md: "350px", "2xl": "320px" }}
+            height={{ base: "230px", md: "260px", "2xl": "240px" }}
             borderRadius="xl"
             bgGradient="linear(to-l, teal.400, gray.600)"
           >

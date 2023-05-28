@@ -6,10 +6,16 @@ import React from "react";
 const MainLayout = ({ children }) => {
   return (
     <Flex bg="gray.100">
-      <Flex maxW="80px" h="full" w="full">
+      <Flex maxW="60px" h="full" w="full">
         <Navigation />
       </Flex>
-      <Flex as="main" h="full" w="full" bg="gray.300" p="8">
+      <Flex
+        as="main"
+        h="full"
+        w={{ base: "max-content", md: "full" }}
+        bg="gray.300"
+        p={{ base: "6", md: "8" }}
+      >
         {children}
       </Flex>
     </Flex>

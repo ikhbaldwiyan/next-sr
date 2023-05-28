@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa";
 
 function RoomLives({ roomLives }) {
   return (
-    roomLives.data.length !== 0 && (
+    roomLives?.data?.length !== 0 && (
       <>
         <Heading fontSize="28" as="h5" mb="6" color="gray.700">
           Room Lives
@@ -16,12 +16,12 @@ function RoomLives({ roomLives }) {
           spacingY="20px"
           mb="4"
         >
-          {roomLives.data.map((item, idx) => (
+          {roomLives?.data?.map((item, idx) => (
             <Box
               key={idx}
               bg="teal.400"
-              width="300px"
-              height="230px"
+              width={{ base: '300px', md: "350px", "2xl": "320px" }}
+              height={{ base: '230px', md: "260px", "2xl": "240px" }}
               borderRadius="xl"
               bgGradient="linear(to-l, red.500, red.700)"
             >
@@ -35,7 +35,7 @@ function RoomLives({ roomLives }) {
                   <Text
                     ml="2"
                     color="gray.100"
-                    fontSize="24"
+                    fontSize={{base: "xl", md: "24"}}
                     fontWeight="bold"
                     cursor="pointer"
                   >
