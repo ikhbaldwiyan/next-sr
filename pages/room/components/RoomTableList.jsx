@@ -12,8 +12,9 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { RiLiveFill } from "react-icons/ri";
+import Link from "next/link";
 
-export default function RoomTableList({ roomList, roomLives, setRoomId }) {
+export default function RoomTableList({ roomList, roomLives }) {
   return (
     <Box height="680px" overflowY="auto">
       <Table
@@ -60,7 +61,7 @@ export default function RoomTableList({ roomList, roomLives, setRoomId }) {
                 </Td>
               </Tr>
             ))}
-          {roomList.map((item, idx) => (
+          {roomList?.map((item, idx) => (
             <Tr key={idx}>
               <Td>
                 <Image borderRadius="lg" src={item.image_url} />
@@ -71,9 +72,11 @@ export default function RoomTableList({ roomList, roomLives, setRoomId }) {
                 </Text>
               </Td>
               <Td>
-                <Button onClick={() => setRoomId(item.id)} colorScheme="telegram">
-                  <RiLiveFill />
-                </Button>
+                <Link href={`/room/${item.id}`}>
+                  <Button colorScheme="telegram">
+                    <RiLiveFill />
+                  </Button>
+                </Link>
               </Td>
             </Tr>
           ))}

@@ -12,7 +12,7 @@ export default function ImageProfile({ room }) {
       borderRadius="lg"
       color="white"
     >
-      <Image borderRadius="md" src={room.image} />
+      <Image borderRadius="md" src={room.image.replace("m.jpeg", "l.jpeg")} />
       <Text
         ml="1"
         my="4"
