@@ -7,6 +7,7 @@ import RoomTableList from "./components/RoomTableList";
 import Biodata from "./components/Biodata";
 import FanLetter from "./components/FanLetter";
 import ImageProfile from "./components/ImageProfile";
+import Live from "./components/Stream/Live";
 
 const RoomDetail = ({ room, roomList, roomLives, id }) => {
   const [rooms, setRooms] = useState(room);
@@ -23,7 +24,9 @@ const RoomDetail = ({ room, roomList, roomLives, id }) => {
     window.scrollTo(0, 0);
   }, [roomId]);
 
-  return (
+  return room.is_onlive ? (
+    <Live id={id} room={room} roomList={roomList} roomLives={roomLives} />
+  ) : (
     <MainLayout>
       <Flex flexDirection="column">
         <Flex>
@@ -31,11 +34,7 @@ const RoomDetail = ({ room, roomList, roomLives, id }) => {
             {rooms.main_name}
           </Heading>
         </Flex>
-        <Flex
-          w="full"
-          direction={["column", "column", "row", "row"]}
-          gap="1"
-        >
+        <Flex w="full" direction={["column", "column", "row", "row"]} gap="1">
           <Flex>
             <Box w={{ base: "380px", "2xl": "450px" }}>
               <ImageProfile room={rooms} />
