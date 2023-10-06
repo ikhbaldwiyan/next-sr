@@ -12,7 +12,7 @@ export default function ImageProfile({ room }) {
       borderRadius="lg"
       color="white"
     >
-      <Image borderRadius="md" src={room.image.replace("m.jpeg", "l.jpeg")} />
+      <Image borderRadius="md" src={room?.image.replace("m.jpeg", "l.jpeg")} />
       <Text
         ml="1"
         my="4"
@@ -20,25 +20,25 @@ export default function ImageProfile({ room }) {
         fontWeight="semibold"
         lineHeight="short"
       >
-        {room.main_name}
+        {room?.main_name}
       </Text>
       <Flex mt="2" align="center" textAlign="center">
         <Box ml="1" as={FaAddressCard} color="gray.300" fontSize={15} />
         <Text ml="1" fontSize="sm">
-          <b> Room Level: {room.room_level}</b>
+          <b> Room Level: {room?.room_level}</b>
         </Text>
         <Box ml="4" as={FaUser} color="gray.300" fontSize={12} />
         <Text ml="1" fontSize="sm">
-          <b> Followers: {room.follower_num}</b>
+          <b> Followers: {room?.follower_num}</b>
         </Text>
       </Flex>
       <Flex direction="column" py="4">
-        <Link href={room.share_url_live} isExternal>
+        <Link href={room?.share_url_live} isExternal>
           <Button color="teal" w="full">
             Open Showroom
           </Button>
         </Link>
-        {room.is_onlive ? (
+        {room?.is_onlive ? (
           <Button mt="4" colorScheme="green" color="white" w="full">
             Online
           </Button>

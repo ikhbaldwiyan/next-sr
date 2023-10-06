@@ -23,8 +23,8 @@ export default function FanLetter({ room }) {
         </Heading>
         <Divider border="2px" borderColor="gray.300" mb="4" />
         <Text fontSize="md" fontWeight="semibold" lineHeight="short">
-          {room.recommend_comment_list != null
-            ? room.recommend_comment_list.map((item, idx) => (
+          {room?.recommend_comment_list != null
+            ? room?.recommend_comment_list.map((item, idx) => (
                 <Box key={idx}>
                   <Flex>
                     <Avatar size="md" src={item.user.image} mr="2" mt="2" />

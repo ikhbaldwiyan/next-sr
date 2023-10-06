@@ -54,7 +54,7 @@ const Live = ({ room, roomList, roomLives, id }) => {
               py="4"
               color="gray.700"
             >
-              {rooms.main_name}
+              {rooms?.main_name}
             </Text>
           </Flex>
           <Flex w={{ base: "100%", md: "380px", "2xl": "400px" }}>

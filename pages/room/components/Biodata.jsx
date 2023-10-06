@@ -15,7 +15,7 @@ export default function Biodata({ room }) {
       <Text mt={2} fontSize="md" fontWeight="semibold" lineHeight="short">
         <div
           dangerouslySetInnerHTML={{
-            __html: room.description && formatDescription(room),
+            __html: room?.description && formatDescription(room),
           }}
         ></div>
       </Text>

@@ -10,14 +10,14 @@ import ImageProfile from "./components/ImageProfile";
 import Live from "./components/Stream/Live";
 
 const RoomDetail = ({ room, roomList, roomLives, id }) => {
-  return room.is_onlive ? (
+  return room?.is_onlive ? (
     <Live id={id} room={room} roomList={roomList} roomLives={roomLives} />
   ) : (
     <MainLayout>
       <Flex flexDirection="column">
         <Flex>
           <Heading as="h5" pt="3" pb="4" fontSize="28" color="gray.700">
-            {room.main_name}
+            {room?.main_name}
           </Heading>
         </Flex>
         <Flex w="full" direction={["column", "column", "row", "row"]} gap="1">

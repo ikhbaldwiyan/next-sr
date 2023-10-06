@@ -38,7 +38,7 @@ export default function RoomTableList({ roomList, roomLives }) {
           </Tr>
         </Thead>
         <Tbody>
-          {roomLives.length &&
+          {roomLives?.length &&
             roomLives?.map((item, idx) => (
               <Tr key={idx}>
                 <Td>
