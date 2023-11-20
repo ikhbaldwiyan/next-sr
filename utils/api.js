@@ -1,1 +1,1 @@
-export const baseUrl = 'https://jkt48-showroom-api.vercel.app/api';
+export const baseUrl = 'https://jkt48-showroom-apis.vercel.app/api';
