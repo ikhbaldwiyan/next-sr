@@ -1,1 +1,1 @@
-export const baseUrl = 'https://api-two-delta-42.vercel.app/api';
+export const baseUrl = 'https://api-wine-nine.vercel.app/api';
